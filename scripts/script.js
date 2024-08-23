@@ -1,4 +1,4 @@
-const myLibrary = [ ];
+const myLibrary = [];
 
 /*displayBook()
 
@@ -24,17 +24,16 @@ function Book(title,author,year,pages){
 */
 
 //Dialog Form
-const showBtn = document.querySelector(".show-dialog")
-const dialog = document.querySelector(".dialog")
-const confirm = document.querySelector()
+const showBtn = document.querySelector(".show-dialog");
+const dialog = document.querySelector(".dialog");
+const confirm = document.querySelector(".Confirm");
 
-showBtn.addEventListener("click", ()=> {
-    dialog.showModal();
-})
+showBtn.addEventListener("click", () => {
+  dialog.showModal();
+});
+confirm.addEventListener("click", (event) => {
+  event.preventDefault();
+  dialog.closest();
+});
 
-
-
-function addBookToLibrary(){
-
-
-}
+function addBookToLibrary() {}
