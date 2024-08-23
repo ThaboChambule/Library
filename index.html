@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <dialog class="dialog">
+      <form method="dialog">
+        <p>
+          <label> Title:</label>
+          <input type="text" required />
+        </p>
+        <p>
+          <label> Author:</label>
+          <input type="text" required />
+        </p>
+        <p>
+          <label> Year:</label>
+          <input type="text" required />
+        </p>
+        <p>
+          <label> Pages:</label>
+          <input type="text" required />
+        </p>
+        <button id="confirm">Confirm</button>
 
 
+
+      </form>
+    </dialog>
+
+    <button class="show-dialog">New Book</button>
 
     <script src="scripts/script.js"></script>
-</body>
+  </body>
 </html>
