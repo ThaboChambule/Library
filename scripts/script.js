@@ -43,7 +43,7 @@ showBtn.addEventListener("click", () => {
 function addBookToLibrary() {
   const book1 = new Book("The Nightmare", "Kelvin Borne", 2005, 250);
   myLibrary.push(book1);
-  const book2 = new Book("Summer", "Sam Smith", 216, 280);
+  const book2 = new Book("Summer", "Sam Smith", 259, 1995);
   myLibrary.push(book2);
 
   const confirm = document.querySelector(".confirm");
@@ -58,5 +58,6 @@ function addBookToLibrary() {
     myLibrary.push(newBook);
     e.preventDefault();
     dialog.close();
+    displayBook()
   });
 }
