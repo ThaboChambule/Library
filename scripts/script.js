@@ -4,9 +4,23 @@ addBookToLibrary();
 displayBook();
 
 function displayBook() {
+
+  let displayBook = "";
+
   myLibrary.forEach((element) => {
-    console.log(element);
-  });
+    const html = `
+    <div class="me">
+    <p> Title: ${element.title}<p>
+    <p>Author: ${element.auther}<p>
+    <p> Year: ${element.year}</p>
+    <p>Pages: ${element.pages}</p>
+    </div>`
+
+      displayBook += html;
+
+  })
+  document.querySelector(".Container").innerHTML = displayBook;
+
 }
 
 function Book(title, author, year, pages) {
@@ -30,7 +44,6 @@ function addBookToLibrary() {
   const book1 = new Book("The Nightmare", "Kelvin Borne", 2005, 250);
   myLibrary.push(book1);
   const book2 = new Book("Summer", "Sam Smith", 216, 280);
-  myLibrary.push(book1);
   myLibrary.push(book2);
 
   const confirm = document.querySelector(".confirm");
